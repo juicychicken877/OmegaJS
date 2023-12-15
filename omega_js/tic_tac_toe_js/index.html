@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <a id="back_to_start" href="../main/index.html"> 
+        BACK TO START
+    </a>
+    <div id="main">
+        <div id="round_header">
+            ROUND 1
+        </div>
+        <div id="turn_board">
+            <div id="x">
+                X
+                <div id="x_score">-</div>
+                <div id="x_highlight"></div>
+            </div>
+            <div id="o">
+                O
+                <div id="o_score">-</div>
+                <div id="o_highlight"></div>
+            </div>
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div id="board">
+            <div id="curtain"></div>
+            
+            <div id="end_game_credits">
+                <div id="winner">X WINNER!</div>
+                <button id="play_again_button">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

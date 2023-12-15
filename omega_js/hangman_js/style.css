@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('IMG/HANGMAN/background.png');
+    font-family: 'Lato', sans-serif;
+}
+
+#game_board {
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#back_to_start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eee;
+    text-shadow: 0 0 10px black;
+    font-size: 24px;
+}
+
+#back_to_start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#word_box {
+    width: 1000px;
+    font-size: 50px;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hangman_stage {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+#game_keyboard {
+    box-sizing: border-box;
+    float: left;
+    width: 500px;
+    height: 500px;
+    border-left: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.key {
+    margin: 2px 5px 2px 5px;
+    width: 80px;
+    height: 65px;
+    border: 4px solid black;
+    text-align: center;
+    border-radius: 10%;
+    font-size: 50px;
+    padding-top: 5px;
+}
+
+#game_result {
+    width: 1000px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#end_game_credits {
+    display: none;
+    width: 1000px;
+    height: 400px;
+    padding-top: 100px;
+    background-color: rgba(57, 163, 49, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.key:hover {
+    cursor: pointer;
+    border: 4px solid #eee;
+    color: #eee;
+}
+
+.omega {
+    position: relative;
+    width: 1000px;
+    margin-top: 50px;
+    height: 500px;
+}
+
+#play_again_button {
+    display: block;
+    font-size: 30px;
+    background-color: yellow;
+    width: 250px;
+    margin-top: 20px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+}
+
+#play_again_button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+.box_shadow {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+}
