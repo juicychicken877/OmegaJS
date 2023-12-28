@@ -1,0 +1,149 @@
+:root {
+    --WIDTH: calc(125px * 3 + 3 * (2*3px));
+    --HALF_WIDTH: calc(var(--WIDTH)/2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('IMG/francesko_background.jpg');
+    font-family: 'Lato', sans-serif;
+}
+
+#curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(125, 255, 212, 0.9);
+    width: 100%;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+}
+#back_to_start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eee;
+    text-shadow: 0 0 10px black;
+    font-size: 24px;
+}
+
+#back_to_start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#round_header {
+    font-size: 35px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    width: var(--WIDTH);
+    text-align: center;
+}
+
+#end_game_credits {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#winner {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#play_again_button {
+    width: 200px;
+    margin-top: 20px;
+    height: 75px;
+    font-size: 30px;
+    outline: 0;
+    border: 3px solid black;
+    transition: 0.3s all ease-in-out;
+}
+
+#play_again_button:hover {
+    cursor: pointer;
+    background-color: #027FFF;
+    color: #eee;
+}
+
+#turn_board {
+    width: var(--WIDTH);
+}
+
+#board {
+    position: relative;
+    display: flex;
+    width: var(--WIDTH);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#x, #o {
+    position: relative;
+    float: left;
+    width: var(--HALF_WIDTH);
+    height: 50px;
+    padding-left: 10px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+#o_score, #x_score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    height: 40px;
+}
+
+#o_highlight, #x_highlight {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background-color: aquamarine;
+    transition: 0.3s all ease-in-out;
+}
+
+#x_highlight {
+    opacity: 1;
+}
+
+#main {
+    margin-top: 25px;
+    width: var(--WIDTH);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    width: 125px;
+    height: 100px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 60px;
+    border: 3px solid black;
+    transition: 0.3s all ease-in-out;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #016EEE;;
+}

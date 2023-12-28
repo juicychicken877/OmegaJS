@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <a id="back_to_start" href="../index.html"> 
+        BACK TO START
+    </a>
+    <div id="calculator">
+        <input id="display" type="text" readonly>
+        <div id="calculator_keys">
+            <button onclick="ClearDisplay()" class="light_gray_button">C</button>
+            <button class="light_gray_button"></button>
+            <button onclick="EraseElementFromDisplay()" class="light_gray_button">X</button>
+            <button onclick="AddToDisplay('/')" class="light_gray_button">/</button>
+            <button onclick="AddToDisplay('7')" class="dark_gray_button">7</button>
+            <button onclick="AddToDisplay('8')" class="dark_gray_button">8</button>
+            <button onclick="AddToDisplay('9')" class="dark_gray_button">9</button>
+            <button onclick="AddToDisplay('*')" class="light_gray_button">*</button>
+            <button onclick="AddToDisplay('4')" class="dark_gray_button">4</button>
+            <button onclick="AddToDisplay('5')" class="dark_gray_button">5</button>
+            <button onclick="AddToDisplay('6')" class="dark_gray_button">6</button>
+            <button onclick="AddToDisplay('-')" class="light_gray_button">-</button>
+            <button onclick="AddToDisplay('1')" class="dark_gray_button">1</button>
+            <button onclick="AddToDisplay('2')" class="dark_gray_button">2</button>
+            <button onclick="AddToDisplay('3')" class="dark_gray_button">3</button>
+            <button onclick="AddToDisplay('+')" class="light_gray_button">+</button>
+            <button class="dark_gray_button"></button>
+            <button onclick="AddToDisplay('0')" class="dark_gray_button">0</button>
+            <button onclick="AddToDisplay('.')" class="dark_gray_button">.</button>
+            <button onclick="Calculate()" class="equals_button">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
