@@ -1,1 +1,1 @@
-open index.html in omega_js/main
+open omega_js/index.html please sir
